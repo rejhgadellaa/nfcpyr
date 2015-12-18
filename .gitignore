@@ -55,3 +55,12 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# --- Nfcpyr
+
+# Some folders
+# - Python
+src/python/nfcpyr/data/*
+src/python/nfcpyr/logs/*
+# - Www
+src/www/api/data

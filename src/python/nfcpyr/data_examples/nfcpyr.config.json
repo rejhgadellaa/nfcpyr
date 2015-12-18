@@ -1,0 +1,32 @@
+{
+    
+    "nfcpyr_id":"YOUR_CUSTOM_ID",
+    "nfcpyr_user":"CUSTOM_USERNAME",
+    "nfcpyr_pass":"CUSTOM_PASSWORD",
+    
+    "url_nfcpyrapi":"http://www.rejh.nl/nfcpyr/api/?",
+    
+    "reader":{
+        "id":"nfcpi001",
+        "name":"Livingroom",
+        "on_checkin":{
+            "checkout":[
+                "nfcpi002"
+            ],
+            "url_requests":[
+                "http://www.google.com"
+            ]
+        },
+        "on_checkout":{
+            "checkout":[],
+            "url_requests":[]
+        }
+    },
+    
+    "sounds":{
+        "enabled":true,
+        "checkin":"sound/snd.beeps01.ogg",
+        "checkout":"sound/snd.fail01.ogg"
+    }
+    
+}
