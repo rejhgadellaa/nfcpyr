@@ -8,9 +8,7 @@ Do cool stuff with NFC and Raspberry Pi's
 Introduction
 ===========
 
-<br />
-
-##What
+What
 -----------
 
 Nfcpyr lets you use a raspberry pi with a NFC reader to trigger all sorts of things via http requests.
@@ -36,9 +34,7 @@ The following actions are supported for above mentioned events:
 Installation
 ===========
 
-<br />
-
-##Requirements
+Requirements
 -----------
 
 * Raspberry Pi with Raspbian (Jessie)
@@ -66,7 +62,7 @@ sudo dpkg -i [acr122u driver package filename] # google "acr122u driver download
 sudo reboot
 ```
 
-##Setting up Nfcpyr
+Setting up Nfcpyr
 ------------
 
 **Set up a reader**
@@ -117,3 +113,5 @@ sudo reboot
 ```
 
 <br data-effect="turn"/>
+
+..More coming soon...
