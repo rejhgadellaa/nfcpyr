@@ -33,17 +33,18 @@ The following actions are supported for above mentioned events:
 
 <br data-effect="nomal"/>
 
-##Installation: 
-------------
+Installation
+===========
 
-**REQUIREMENTS**
+<br />
+
+##Requirements
+-----------
 
 * Raspberry Pi with Raspbian (Jessie)
 * NFC reader (tested with ACR122U)
 * Python 2 + bunch of python 2 modules (simplejson, netifaces, pygame)
 * Libnfc, python-usb
-
-**INSTALLATION**
 
 I'm working on an installation script that installs all the required software components and sets up raspbian to properly work with Nfcpyr. The short version is: you  need to install the above mentioned requirements. 
 
