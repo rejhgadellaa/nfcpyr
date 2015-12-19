@@ -25,7 +25,7 @@ The following actions are supported for above mentioned events:
 * Check out - a list of other readers that should register you as 'checked out' [1]
 * Url requests - a list of urls that are requested [2]
 
-[1] For example: if you 'check in' at the livingroom it will automatically check you in at the front door (in case you missed that one). Any actions that are associated with checking in using the reader at the front door will also be triggered. It works other way around, too: Checking out at the front door may check you out at all readers in the building and trigger any actions that are associated with those.
+[1] For example: if you 'check in' at the livingroom it can automatically check you in at the front door (in case you missed that one). Any actions that are associated with checking in using the reader at the front door will in this case also be triggered. It works other way around, too: Checking out at the front door may check you out at all readers in the building and trigger any actions that are associated with those.
 
 [2] For example: if you have lights that can be turned on or off via a http request you can trigger that. Certain supported keywords will be replaced before requesting the url so you can pass parameters (like the username or name of the reader).
 
