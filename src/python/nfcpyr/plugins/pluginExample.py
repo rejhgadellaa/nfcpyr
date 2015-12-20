@@ -1,6 +1,8 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 # Nfcpyr Plugin Example
-# Requires five methods: init(), on_scan(), on_checkin(), on_checkout(), on_fail()
+# Requires five methods: init(), update_userdict() on_scan(), on_checkin(), on_checkout(), on_fail()
 # Important: all methods should use try/except to not crash nfcpyr!
 
 # Config

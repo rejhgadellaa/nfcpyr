@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
 import os
 import sys
@@ -8,6 +10,8 @@ import traceback
 import netifaces
 
 import nfc
+
+import npluginmgr
 
 import rgaudio
 import rgfileio
@@ -125,6 +129,10 @@ class Nfcpyr(object):
 
         if self.config["sounds"]["enabled"] and "checkin" in self.config["sounds"]:
             self.rgaudio.playfile(self.config["sounds"]["checkin"])
+
+        # PLUGINS
+        self.rglog.log(" -> Init plugins..")
+        self.pluginmgr = npluginmgr.NfcpyrPluginMgr("plugins/")
 
         # INIT READER
         self.rglog.log(" -> Init reader..")

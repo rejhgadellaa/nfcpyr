@@ -9,17 +9,28 @@
     "reader":{
         "id":"nfcpi001",
         "name":"Livingroom",
+        "on_scan":{
+            "plugins":[
+                "pluginExample"
+            ]
+        },
         "on_checkin":{
             "checkout":[
                 "nfcpi002"
             ],
             "url_requests":[
                 "http://www.google.com"
+            ],
+            "plugins":[
+                "pluginExample"
             ]
         },
         "on_checkout":{
             "checkout":[],
-            "url_requests":[]
+            "url_requests":[],
+            "plugins":[
+                "pluginExample"
+            ]
         }
     },
     
