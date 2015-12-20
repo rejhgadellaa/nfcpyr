@@ -30,7 +30,7 @@ class RgPluginMgr(object):
         self.pluginObjs = map(__import__,self.pluginNames)
         return True
 
-    def call(self, pluginName, methodName, arguments={}):
+    def call(self, pluginName, methodName, **kwargs):
         # find plugin index..
         pindex = self.pluginNames.find(pluginName)
         if pindex < 0:
@@ -38,7 +38,7 @@ class RgPluginMgr(object):
         # Call method..
         res = False
         try:
-            res = self.pluginObjs[0][methodName](arguments)
+            res = self.pluginObjs[0][methodName](**kwargs)
         except:
             pass
         return res
