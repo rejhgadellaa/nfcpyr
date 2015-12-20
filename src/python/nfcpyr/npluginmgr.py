@@ -67,7 +67,7 @@ class NfcpyrPluginMgr(object):
         try:
             loglines = self.pluginObjs[pluginName].loglines
             for i in range(0, len(loglines)):
-                self.rglog.log(" ---> "+ str(loglines[i]))
+                self.rglog.log(" --> "+ str(loglines[i]))
         except:
             pass
         # return

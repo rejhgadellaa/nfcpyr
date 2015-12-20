@@ -3,7 +3,7 @@
 
 # Nfcpyr Plugin Example
 # Requires five methods: init(), on_scan(), on_checkin(), on_checkout(), on_fail()
-# It is encouraged to also include log()
+# It is encouraged to also include log(), loglines will be printed by npluginmgr when method has finished
 # Important: all methods should use try/except to not crash nfcpyr!
 
 # Config
@@ -73,7 +73,7 @@ def on_checkout(**kwargs):
 
 # Plugin.on_fail()
 # Called when any of the on_.. methods returned False
-# Arguments: 'method' name that failed or 'unknown'
+# Arguments: 'method' name that failed ('on_scan', etc) or 'unknown'
 def on_fail(**kwargs):
     try:
         log(str(cfg["plugin_id"]) +".on_fail()")
