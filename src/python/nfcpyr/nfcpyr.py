@@ -132,7 +132,7 @@ class Nfcpyr(object):
 
         # PLUGINS
         self.rglog.log(" -> Init plugins..")
-        self.pluginmgr = npluginmgr.NfcpyrPluginMgr("plugins/")
+        self.pluginmgr = npluginmgr.NfcpyrPluginMgr("plugins/", self.reader)
 
         # INIT READER
         self.rglog.log(" -> Init reader..")
