@@ -276,6 +276,13 @@ class Nfcpyr(object):
                     self.rglog.log(" ----> "+ str(urlreqres))
                     # TODO: replace ##KEYWORDS##
 
+            # -> Plugins!
+            if "plugins" in reader[event]:
+                pluginNames = reader[event]["plugins"]
+                for i in range(0, len(pluginNames)):
+                    pluginName = pluginNames[i]
+                    self.pluginmgr.call(pluginName, event, userdict=userdict, readerdict=reader)
+
         else:
             # Nothing..
             self.rglog.log(" -> Nothing to do...")
