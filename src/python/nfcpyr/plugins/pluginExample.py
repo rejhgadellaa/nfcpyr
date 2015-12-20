@@ -14,10 +14,10 @@ readerdict = None
 # Plugin.init()
 # Called when nfcpyr is started
 # Arguments: reader config dictionary
-def init(_readerdict=None):
+def init(arguments={}):
     try:
         print(str(cfg["plugin_id"]) +".init()")
-        readerdict = _readerdict
+        readerdict = arguments["readerdict"]
         print(" -> Reader_id: "+ str(readerdict["id"]))
     except:
         return False
@@ -26,10 +26,10 @@ def init(_readerdict=None):
 # Plugin.on_scan()
 # Called when user scans tag (plugin_id needs to be in reader config -> on_scan -> plugins)
 # Arguments: user dictionary
-def on_scan(userdict):
+def on_scan(arguments):
     try:
         print(str(cfg["plugin_id"]) +".on_scan()")
-        print(" -> Username: "+ str(userdict["username"]))
+        print(" -> Username: "+ str(arguments["userdict"]["username"]))
         # ...
     except:
         return False
@@ -38,10 +38,10 @@ def on_scan(userdict):
 # Plugin.on_checkin()
 # Called when user checks in (plugin_id needs to be in reader config -> on_checkin -> plugins)
 # Arguments: user dictionary
-def on_checkin(userdict):
+def on_checkin(arguments):
     try:
         print(str(cfg["plugin_id"]) +".on_checkin()")
-        print(" -> Username: "+ str(userdict["username"]))
+        print(" -> Username: "+ str(arguments["userdict"]["username"]))
         # ...
     except:
         return False
@@ -50,10 +50,10 @@ def on_checkin(userdict):
 # Plugin.on_checkout()
 # Called when user scans tag (plugin_id needs to be in reader config -> on_checkout -> plugins)
 # Arguments: user dictionary
-def on_checkout(userdict):
+def on_checkout(arguments):
     try:
         print(str(cfg["plugin_id"]) +".on_checkout()")
-        print(" -> Username: "+ str(userdict["username"]))
+        print(" -> Username: "+ str(arguments["userdict"]["username"]))
         # ...
     except:
         return False
