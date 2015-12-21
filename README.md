@@ -8,9 +8,6 @@ Do cool stuff with NFC and Raspberry Pi's
 Introduction
 ===========
 
-What
------------
-
 Nfcpyr lets you use a raspberry pi with a NFC reader to trigger all sorts of things via http requests.
 
 It supports the following events:
