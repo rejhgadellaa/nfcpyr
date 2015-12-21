@@ -31,3 +31,8 @@ The following actions are supported for above mentioned events:
 
 <br data-effect="nomal"/>
 
+Documentation
+===========
+
+See the Wiki:
+https://github.com/rejhgadellaa/nfcpyr/wiki
